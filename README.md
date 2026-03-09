@@ -1,4 +1,74 @@
-# 🏥 Sistema de Citas Médicas - Clean API
+# 🏥 Medical Appointment System | Sistema de Citas Médicas
+
+[English](#-medical-appointment-system---clean-api) | [Español](#-sistema-de-citas-médicas---clean-api)
+
+---
+
+# 🇺🇸 Medical Appointment System - Clean API
+
+A professional medical appointment management system designed under **Clean Architecture** and **SOLID** principles. This project demonstrates how to build a scalable, maintainable, and secure API using modern technologies.
+
+## 🚀 Why "Clean API"?
+
+The name refers to **Clean Architecture**. Unlike traditional projects where code is often coupled, here the code is organized into independent layers:
+
+*   **Domain:** The core of the system (Business rules and entities).
+*   **Application:** Use cases (Schedule appointment, list appointments).
+*   **Infrastructure:** Interaction with the outside world (MongoDB database, Mongoose).
+*   **Presentation:** How data is displayed (API Controllers and visual Dashboard).
+
+This allows the system to be easily testable and enables us to change the database or framework without breaking the business logic.
+
+## ✨ Key Features
+
+*   🛡️ **Security:** Routes protected via API Key Middleware.
+*   🗄️ **Real Persistence:** Integration with **MongoDB Atlas** for cloud storage.
+*   🎨 **Premium Dashboard:** User interface with **Glassmorphism** aesthetics and dark mode.
+*   🏗️ **Robust Architecture:** Strict implementation of Dependency Inversion.
+*   **TypeScript:** For a typed and secure codebase.
+
+## 🛠️ Tech Stack
+
+*   **Backend:** Node.js, Express, TypeScript
+*   **Database:** MongoDB Atlas, Mongoose
+*   **Frontend:** Vanilla JavaScript, HTML5, CSS3 (Glassmorphism UI)
+*   **Dev Tools:** Nodemon, Dotenv, TS-Node
+
+## 🏁 Installation and Usage
+
+1.  **Clone the repository and enter the folder:**
+    ```bash
+    cd clean-api
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment Variables:**
+    Create a `.env` file in the root with your credentials:
+    ```env
+    PORT=3000
+    MONGODB_URI=your_mongodb_atlas_url
+    API_KEY=your_secret_key
+    ```
+
+4.  **Start in development mode:**
+    ```bash
+    npm run dev
+    ```
+
+5.  **Open the Dashboard:**
+    Navigate to [http://localhost:3000](http://localhost:3000)
+
+---
+
+> Developed as an engineering piece to demonstrate skills in software architecture and professional fullstack development. 🚀
+
+---
+
+# 🇪🇸 Sistema de Citas Médicas - Clean API
 
 Un sistema profesional de gestión de turnos médicos diseñado bajo los principios de **Clean Architecture** y **SOLID**. Este proyecto demuestra cómo construir una API escalable, mantenible y segura utilizando tecnologías modernas.
 
@@ -19,7 +89,7 @@ Esto permite que el sistema sea fácil de testear y que podamos cambiar la base 
 *   🗄️ **Persistencia Real:** Integración con **MongoDB Atlas** para almacenamiento en la nube.
 *   🎨 **Dashboard Premium:** Interfaz de usuario con estética **Glassmorphism** y modo oscuro.
 *   🏗️ **Arquitectura Robusta:** Implementación estricta de Inversión de Dependencias.
-*   TypeScript para una base de código tipada y segura.
+*   **TypeScript:** Para una base de código tipada y segura.
 
 ## 🛠️ Tecnologías Utilizadas
 
