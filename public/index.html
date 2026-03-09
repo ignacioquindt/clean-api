@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare | Medical Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="apiKeyModal" class="hidden">
+        <div class="card" style="width: 350px;">
+            <h2>Secure Access</h2>
+            <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-secondary);">Ingrese su API Key para gestionar las citas.</p>
+            <div class="form-group">
+                <input type="text" id="apiKeyInput" placeholder="x-api-key">
+            </div>
+            <button onclick="saveApiKey()">Acceder</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>HealthCare System</h1>
+            </div>
+            <div class="auth-badge" id="authStatus">
+                🔑 API Key Requerida
+            </div>
+        </header>
+
+        <div class="grid">
+            <aside>
+                <div class="card">
+                    <h2>Nueva Cita</h2>
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label>Paciente</label>
+                            <input type="text" id="patientName" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Doctor</label>
+                            <input type="text" id="doctorName" placeholder="Nombre del médico" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Fecha</label>
+                            <input type="datetime-local" id="date" required>
+                        </div>
+                        <button type="submit">Agendar Cita</button>
+                    </form>
+                </div>
+            </aside>
+
+            <main>
+                <div class="card">
+                    <h2>Citas Registradas</h2>
+                    <div class="appointment-list" id="appointmentList">
+                        <!-- Las citas aparecerán aquí -->
+                        <p style="text-align: center; color: var(--text-secondary); padding: 2rem;">Cargando citas...</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
