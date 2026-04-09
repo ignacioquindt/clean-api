@@ -98,34 +98,4 @@ Esto permite que el sistema sea fácil de testear y que podamos cambiar la base 
 *   **Frontend:** Vanilla JavaScript, HTML5, CSS3 (Glassmorphism UI)
 *   **Dev Tools:** Nodemon, Dotenv, TS-Node
 
-## 🏁 Instalación y Uso
-
-1.  **Clonar el repositorio y entrar a la carpeta:**
-    ```bash
-    cd clean-api
-    ```
-
-2.  **Instalar dependencias:**
-    ```bash
-    npm install
-    ```
-
-3.  **Configurar variables de entorno:**
-    Crea un archivo `.env` en la raíz con tus credenciales:
-    ```env
-    PORT=3000
-    MONGODB_URI=tu_url_de_mongodb_atlas
-    API_KEY=tu_clave_secreta
-    ```
-
-4.  **Iniciar en modo desarrollo:**
-    ```bash
-    npm run dev
-    ```
-
-5.  **Abrir el Dashboard:**
-    Navega a [http://localhost:3000](http://localhost:3000)
-
----
-
 > Desarrollado como una pieza de ingeniería para demostrar habilidades en arquitectura de software y desarrollo fullstack profesional. 🚀
